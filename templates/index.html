@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Live Scam Detector</title>
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Live Conversation & Risk Status</h2>
+
+    <!-- START/STOP button -->
+    <button id="toggle-button" class="btn btn-primary mb-3">
+      Start Listening
+    </button>
+
+    <table class="table table-bordered">
+      <thead class="thead-light">
+        <tr>
+          <th>Conversation</th>
+          <th>Score</th>
+          <th>Status</th>
+          <th>Reasons</th>
+        </tr>
+      </thead>
+      <tbody id="risk-table-body"></tbody>
+    </table>
+  </div>
+
+  <audio id="beep-sound" src="/static/audio/beep.mp3"></audio>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

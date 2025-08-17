@@ -1,0 +1,9 @@
+.badge-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.badge-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
